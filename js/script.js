@@ -1,19 +1,20 @@
 // Milestone 1
 // - Replica della grafica con la possibilità di avere messaggi scritti dall’utente (verdi) 
-// e dall’interlocutore (bianco) assegnando due classi CSS diverse
+// e dall’interlocutore (bianco) assegnando due classi CSS diverse ✔️
 // - Visualizzazione dinamica della lista contatti: tramite la direttiva v-for, 
-// visualizzare nome e immagine di ogni contatto
+// visualizzare nome e immagine di ogni contatto ✔️
 
 // Milestone 2
 // - Visualizzazione dinamica dei messaggi: tramite la direttiva v-for, 
-// visualizzare tutti i messaggi relativi al contatto attivo all’interno del pannello della conversazione
-// - Click sul contatto mostra la conversazione del contatto cliccato
+// visualizzare tutti i messaggi relativi al contatto attivo all’interno del pannello della conversazione ✔️
+// - Click sul contatto mostra la conversazione del contatto cliccato ✔️
 
 const { createApp } = Vue;
 
 createApp({
     data() {
         return {
+            activeChat: 0,
             contacts: [{
                 name: 'Michele',
                 avatar: '_1',
@@ -52,7 +53,7 @@ createApp({
                   {
                     date: '20/03/2020 16:35:00',
                     message: 'Mi piacerebbe ma devo andare a fare la spesa.',
-                    status: 'received'
+                    status: 'sent'
                   }
                 ],
               },
@@ -97,5 +98,13 @@ createApp({
         };
     },
     methods: {
+
+      isActive(index){
+        this.activeChat= index;
+      },
+
+      sentMessage(index){
+
+      }
     }
 }).mount('#app');
