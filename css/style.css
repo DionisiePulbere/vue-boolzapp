@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #009688;
+    height: 15vh;
+}
+
+body{
+    background-color: #D5D6CF;
+    height: 100vh;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+}
+
+.c-gray{
+    color: gray;
+}
+
+.a-center{
+    align-items: center;
+}
+
+.j-center{
+    justify-content: center;
+}
+
+.main-row{
+    background-color: #EAEAEA;
+    justify-content: space-between;
+    height: 50px;
+}
+
+img{
+    margin: 6px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.main-container{
+    margin: 0 auto;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 94vh;
+    width: 80vw;
+    background-color: white;
+}
+
+.left-side{
+    width: 35%;
+    height: 100%;
+    border-right: 1px solid lightgray;
+}
+
+.right-side{
+    width: 65%;
+    height: 100%;
+    position: relative;
+}
+
+small{
+    font-size: 10px;
+}
+
+.tool-message i, .tool-chat i{
+    margin-right: 10px;
+}
+
+.row-secondary{
+    background-color: #8EDAFC;
+    height: 50px;
+}
+
+.notifications{
+    color: #8EDAFC;
+    background-color: white;
+    width: 40px;
+    justify-content: center;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    margin: 8px;
+}
+
+.btn{
+    background-color: white;
+    padding: 4px 16px;
+    width: 20%;
+    border: none;
+}
+
+.input{
+    padding: 4px;
+    background-color: #FBFBFA;
+    height: 30px;
+}
+
+input{
+    border: none;
+    width: 80%;
+    padding: 4px 4px; 
+}
+
+.chat{
+    height: calc(100% - 100px);
+    overflow-y: auto;
+}
+
+.chat img{
+    border-radius: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.input-message{
+    background-color: #F3EEEA;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+}
+
+.emoji, .mic{
+    width: 10%;
+    padding: 0 20px;
+}
+
+.text{
+    flex-grow: 1;
+}
+
+.text input{
+    width: 100%;
+}
+
+.name{
+    padding: 10px 4px;
+    padding-bottom: 0;
+}
+
+.container-message{
+    height: calc(100% - 130px);
+    overflow-y: auto;
+}
+
+.message-list{
+    justify-content: space-between;
+}
+
+.time{
+    margin-right: 10px;
+}
+
+.chat-active{
+    background-color: #E9EBEB;
+}
+
+.small{
+    font-size: 14px;
+}
