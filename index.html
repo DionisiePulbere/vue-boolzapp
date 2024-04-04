@@ -46,7 +46,7 @@
                         <input type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
                     <div class="container-message">
-                        <div v-for="contact, index in contacts" class="message-list flex chat-active" @click="isActive(index)">
+                        <div v-for="contact, index in contacts" class="message-list flex" @click="isActive(index)">
                             <div class="flex">
                                 <img :src="'img/avatar' + contact.avatar + '.jpg'" alt="foto profilo">
                                 <div class="name pointer">
@@ -86,7 +86,7 @@
                             <i class="pointer fa-regular fa-face-smile"></i>
                         </div>
                         <div class="text flex a-center j-center">
-                            <input type="text" placeholder="Scrivi un messaggio">
+                            <input type="text" placeholder="Scrivi un messaggio" v-model="userInput" @keyup.enter="sentMessage(activeChat)">
                         </div>
                         <div class="mic c-gray flex a-center j-center">
                             <i class="pointer fa-solid fa-microphone"></i>
