@@ -33,6 +33,7 @@ createApp({
         return {
             activeChat: 0,
             userInput: "",
+            searchValue: "",
             contacts: [{
                 name: 'Michele',
                 avatar: '_1',
@@ -127,7 +128,7 @@ createApp({
         userMessages.message = this.userInput;
         userMessages.status = "sent";
         this.contacts[activeChat].messages.push(userMessages);
-        this.userImput = "";
+        this.userInput = "";
         setTimeout(() => {
           const robotMessages = {};
           robotMessages.date = '4:21';
@@ -136,6 +137,14 @@ createApp({
           this.contacts[activeChat]. messages.push(robotMessages);
         }, 1000)
       },
+
+      filterChat(){
+        this.contacts.forEach((contact) => {
+          searchName = contact.name.toLowerCase();
+          contact.visible = searchName.includes(this.searchValue.toLowerCase());
+
+        })
+      }
 
 
     }
