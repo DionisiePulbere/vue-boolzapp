@@ -142,10 +142,7 @@ createApp({
         this.contacts.forEach((contact) => {
           searchName = contact.name.toLowerCase();
           contact.visible = searchName.includes(this.searchValue.toLowerCase());
-
         })
       }
-
-
     }
 }).mount('#app');
