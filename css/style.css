@@ -134,9 +134,9 @@ input{
 }
 
 .message-row{
+    position: relative;
     min-width: 200px;
     max-width: 50%;
-
 }
 
 .sent{
@@ -146,6 +146,7 @@ input{
     border-radius: 8px;
     margin: 10px 30px;
     margin-left:auto;
+    padding-bottom: 12px;
     justify-content: space-between;
 }
 
@@ -157,6 +158,7 @@ input{
     min-width: 200px;
     justify-content: space-between;
     margin: 10px 30px;
+    padding-bottom: 12px;
 }
 
 .input-message{
@@ -194,6 +196,12 @@ input{
 
 .message-list{
     justify-content: space-between;
+}
+
+.time-message{
+    position: absolute;
+    bottom: 4px;
+    right: 10px;
 }
 
 .time{

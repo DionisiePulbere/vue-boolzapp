@@ -80,7 +80,7 @@
                     <div class="chat">
                         <div v-for="message in contacts[activeChat].messages" class="message-row" :class="message.status"  >
                             <div>{{ message.message }}</div>
-                            <div class="time-message-user"><small class="c-gray">{{ message.date }}</small></div>
+                            <div class="time-message"><small class="c-gray">{{ message.date }}</small></div>
                         </div>
                     </div>
                     <div class="input-message flex">
@@ -97,7 +97,6 @@
                 </div>
             </div>
         </div>
-
     </main>
     <!-- collegamneto al mio JS -->
     <script type="text/javascript" src="js/script.js"></script>
